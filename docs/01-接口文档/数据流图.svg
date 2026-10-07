@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="860" viewBox="0 0 1300 860">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#424242"/>
+    </marker>
+  </defs>
+  <rect width="1300" height="860" fill="#FFFFFF"/>
+  <g font-family="Microsoft YaHei, PingFang SC, SimHei, sans-serif">
+
+    <text x="650" y="48" text-anchor="middle" font-size="24" font-weight="bold" fill="#212121">数据流图 · 帧数据流转全过程</text>
+    <text x="650" y="76" text-anchor="middle" font-size="14" fill="#757575">基于 ZYNQ7020 的轻量级辅助驾驶原型系统</text>
+
+    <!-- PL 泳道 -->
+    <rect x="100" y="130" width="1130" height="170" rx="10" fill="#F1F8E9" stroke="#AED581" stroke-width="1"/>
+    <text x="120" y="158" font-size="15" font-weight="bold" fill="#33691E">PL 端（FPGA）数据流 —— 逐像素流水处理</text>
+
+    <!-- A1 原始帧 -->
+    <rect x="120" y="180" width="140" height="110" rx="6" fill="#FFFFFF" stroke="#2E7D32" stroke-width="1.5"/>
+    <rect x="140" y="195" width="100" height="34" fill="#FFFFFF" stroke="#424242" stroke-width="1.5"/>
+    <circle cx="170" cy="212" r="7" fill="#E53935"/>
+    <circle cx="212" cy="212" r="7" fill="#43A047"/>
+    <text x="190" y="255" text-anchor="middle" font-size="15" font-weight="bold" fill="#212121">原始帧</text>
+    <text x="190" y="278" text-anchor="middle" font-size="12" fill="#616161">RGB565 640×480</text>
+
+    <!-- A2 灰度图 -->
+    <rect x="290" y="180" width="140" height="110" rx="6" fill="#FFFFFF" stroke="#2E7D32" stroke-width="1.5"/>
+    <rect x="310" y="195" width="100" height="34" fill="#BDBDBD" stroke="#424242" stroke-width="1.5"/>
+    <text x="360" y="255" text-anchor="middle" font-size="15" font-weight="bold" fill="#212121">灰度图</text>
+    <text x="360" y="278" text-anchor="middle" font-size="12" fill="#616161">8bit / 像素</text>
+
+    <!-- A3 Sobel -->
+    <rect x="460" y="180" width="140" height="110" rx="6" fill="#FFFFFF" stroke="#2E7D32" stroke-width="1.5"/>
+    <rect x="480" y="195" width="100" height="34" fill="#FFFFFF" stroke="#424242" stroke-width="1.5"/>
+    <polyline points="495,224 512,204 527,218 543,202 565,222" fill="none" stroke="#212121" stroke-width="2"/>
+    <text x="530" y="255" text-anchor="middle" font-size="15" font-weight="bold" fill="#212121">Sobel 边缘</text>
+    <text x="530" y="278" text-anchor="middle" font-size="12" fill="#616161">二值图（阈值可配）</text>
+
+    <!-- A4 帧差掩码 -->
+    <rect x="630" y="180" width="140" height="110" rx="6" fill="#FFFFFF" stroke="#2E7D32" stroke-width="1.5"/>
+    <rect x="650" y="195" width="100" height="34" fill="#212121" stroke="#424242" stroke-width="1.5"/>
+    <ellipse cx="682" cy="212" rx="10" ry="6" fill="#FFFFFF"/>
+    <ellipse cx="716" cy="216" rx="12" ry="8" fill="#FFFFFF"/>
+    <text x="700" y="255" text-anchor="middle" font-size="15" font-weight="bold" fill="#212121">帧差运动掩码</text>
+    <text x="700" y="278" text-anchor="middle" font-size="12" fill="#616161">（相邻帧灰度差）</text>
+
+    <!-- A5 AXI DMA -->
+    <rect x="800" y="180" width="140" height="110" rx="6" fill="#FFFFFF" stroke="#2E7D32" stroke-width="1.5"/>
+    <text x="870" y="240" text-anchor="middle" font-size="15" font-weight="bold" fill="#212121">AXI DMA</text>
+    <text x="870" y="268" text-anchor="middle" font-size="12" fill="#616161">S2MM 结果上传</text>
+
+    <!-- A6 DDR -->
+    <rect x="970" y="180" width="140" height="110" rx="6" fill="#FFFFFF" stroke="#2E7D32" stroke-width="1.5"/>
+    <rect x="1015" y="198" width="50" height="10" fill="#EF6C00"/>
+    <rect x="1015" y="212" width="50" height="10" fill="#EF6C00"/>
+    <rect x="1015" y="226" width="50" height="10" fill="#EF6C00"/>
+    <text x="1040" y="255" text-anchor="middle" font-size="15" font-weight="bold" fill="#212121">DDR 处理帧</text>
+    <text x="1040" y="278" text-anchor="middle" font-size="12" fill="#616161">帧缓冲</text>
+
+    <!-- PL 行内箭头 -->
+    <line x1="260" y1="235" x2="290" y2="235" stroke="#424242" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="430" y1="235" x2="460" y2="235" stroke="#424242" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="600" y1="235" x2="630" y2="235" stroke="#424242" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="770" y1="235" x2="800" y2="235" stroke="#424242" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="940" y1="235" x2="970" y2="235" stroke="#424242" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- PL → PS 蛇形连接 -->
+    <line x1="1040" y1="290" x2="1040" y2="560" stroke="#424242" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="1052" y="420" text-anchor="start" font-size="12" fill="#424242">帧缓冲</text>
+
+    <!-- PS 泳道 -->
+    <rect x="100" y="520" width="1130" height="170" rx="10" fill="#E3F2FD" stroke="#90CAF9" stroke-width="1"/>
+    <text x="120" y="548" font-size="15" font-weight="bold" fill="#0D47A1">PS 端（Linux + PYNQ）数据流 —— 逐帧智能处理</text>
+
+    <!-- B1 读帧 -->
+    <rect x="970" y="560" width="140" height="110" rx="6" fill="#FFFFFF" stroke="#1565C0" stroke-width="1.5"/>
+    <text x="1040" y="600" text-anchor="middle" font-size="15" font-weight="bold" fill="#0D47A1">PS 读帧</text>
+    <text x="1040" y="622" text-anchor="middle" font-size="12" fill="#616161">PYNQ DMA 接收</text>
+
+    <!-- B2 三算法 -->
+    <rect x="800" y="560" width="140" height="110" rx="6" fill="#FFFFFF" stroke="#1565C0" stroke-width="1.5"/>
+    <text x="870" y="590" text-anchor="middle" font-size="14" font-weight="bold" fill="#0D47A1">三算法并行</text>
+    <text x="870" y="612" text-anchor="middle" font-size="12" fill="#616161">红绿灯 · 车道线</text>
+    <text x="870" y="630" text-anchor="middle" font-size="12" fill="#616161">障碍物</text>
+
+    <!-- B3 告警决策 -->
+    <rect x="630" y="560" width="140" height="110" rx="6" fill="#FFFFFF" stroke="#1565C0" stroke-width="1.5"/>
+    <text x="700" y="600" text-anchor="middle" font-size="15" font-weight="bold" fill="#0D47A1">告警决策</text>
+    <text x="700" y="622" text-anchor="middle" font-size="12" fill="#616161">分级告警状态机</text>
+
+    <!-- B4 OSD -->
+    <rect x="460" y="560" width="140" height="110" rx="6" fill="#FFFFFF" stroke="#1565C0" stroke-width="1.5"/>
+    <text x="530" y="600" text-anchor="middle" font-size="15" font-weight="bold" fill="#0D47A1">OSD 叠加</text>
+    <text x="530" y="622" text-anchor="middle" font-size="12" fill="#616161">状态/框/文字绘制</text>
+
+    <!-- B5 显示帧写回 -->
+    <rect x="290" y="560" width="140" height="110" rx="6" fill="#FFFFFF" stroke="#1565C0" stroke-width="1.5"/>
+    <text x="360" y="600" text-anchor="middle" font-size="15" font-weight="bold" fill="#0D47A1">显示帧写回</text>
+    <text x="360" y="622" text-anchor="middle" font-size="12" fill="#616161">DMA MM2S</text>
+
+    <!-- B6 HDMI -->
+    <rect x="120" y="560" width="140" height="110" rx="6" fill="#FFFFFF" stroke="#1565C0" stroke-width="1.5"/>
+    <text x="190" y="600" text-anchor="middle" font-size="15" font-weight="bold" fill="#0D47A1">HDMI 输出</text>
+    <text x="190" y="622" text-anchor="middle" font-size="12" fill="#616161">实时显示</text>
+
+    <!-- PS 行内箭头（从右向左） -->
+    <line x1="970" y1="615" x2="940" y2="615" stroke="#424242" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="800" y1="615" x2="770" y2="615" stroke="#424242" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="630" y1="615" x2="600" y2="615" stroke="#424242" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="460" y1="615" x2="430" y2="615" stroke="#424242" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="290" y1="615" x2="260" y2="615" stroke="#424242" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <!-- 控制流（虚线）：PS → PL 参数下发 -->
+    <polyline points="1000,560 1000,500 700,500 700,290" fill="none" stroke="#424242" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
+    <text x="850" y="490" text-anchor="middle" font-size="12" fill="#424242">AXI-Lite 参数 / 状态（阈值下发 / 状态上报）</text>
+
+    <!-- 性能指标 -->
+    <rect x="330" y="700" width="640" height="46" rx="8" fill="#FAFAFA" stroke="#BDBDBD" stroke-width="1"/>
+    <text x="650" y="729" text-anchor="middle" font-size="13" fill="#424242">性能指标：帧率 ≥ 25fps ｜ 端到端延迟 ≤ 60ms ｜ LUT &lt; 70% ｜ WNS ≥ 0</text>
+
+    <!-- 图例 -->
+    <line x1="350" y1="790" x2="410" y2="790" stroke="#424242" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="420" y="795" text-anchor="start" font-size="13" fill="#424242">数据流</text>
+    <line x1="600" y1="790" x2="660" y2="790" stroke="#424242" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
+    <text x="670" y="795" text-anchor="start" font-size="13" fill="#424242">控制流（AXI-Lite）</text>
+  </g>
+</svg>

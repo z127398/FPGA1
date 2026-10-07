@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1300" height="870" viewBox="0 0 1300 870">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#424242"/>
+    </marker>
+  </defs>
+  <rect width="1300" height="870" fill="#FFFFFF"/>
+  <g font-family="Microsoft YaHei, PingFang SC, SimHei, sans-serif">
+
+    <text x="650" y="52" text-anchor="middle" font-size="24" font-weight="bold" fill="#212121">系统框图 · 基于 ZYNQ7020 的轻量级辅助驾驶原型系统</text>
+
+    <!-- OV5640 摄像头 -->
+    <rect x="40" y="592" width="160" height="110" rx="10" fill="#F5F5F5" stroke="#424242" stroke-width="2"/>
+    <text x="120" y="638" text-anchor="middle" font-size="16" font-weight="bold" fill="#212121">OV5640</text>
+    <text x="120" y="666" text-anchor="middle" font-size="15" fill="#212121">摄像头</text>
+
+    <!-- HDMI 显示器 -->
+    <rect x="1100" y="592" width="160" height="110" rx="10" fill="#F5F5F5" stroke="#424242" stroke-width="2"/>
+    <text x="1180" y="638" text-anchor="middle" font-size="16" font-weight="bold" fill="#212121">HDMI</text>
+    <text x="1180" y="666" text-anchor="middle" font-size="15" fill="#212121">显示器</text>
+
+    <!-- ZYNQ7020 芯片 -->
+    <rect x="250" y="110" width="800" height="680" rx="14" fill="#FAFAFA" stroke="#616161" stroke-width="3"/>
+    <text x="1035" y="136" text-anchor="end" font-size="16" font-weight="bold" fill="#757575">ZYNQ7020</text>
+
+    <!-- PS 区 -->
+    <rect x="270" y="140" width="760" height="230" rx="8" fill="#E3F2FD" stroke="#1565C0" stroke-width="2"/>
+    <text x="290" y="170" font-size="16" font-weight="bold" fill="#0D47A1">PS · Linux + PYNQ（Python / OpenCV）</text>
+
+    <rect x="295" y="195" width="165" height="85" rx="6" fill="#FFFFFF" stroke="#1565C0" stroke-width="1.5"/>
+    <text x="377" y="232" text-anchor="middle" font-size="15" font-weight="bold" fill="#0D47A1">红绿灯</text>
+    <text x="377" y="258" text-anchor="middle" font-size="14" fill="#0D47A1">HSV 分类</text>
+    <rect x="475" y="195" width="165" height="85" rx="6" fill="#FFFFFF" stroke="#1565C0" stroke-width="1.5"/>
+    <text x="557" y="232" text-anchor="middle" font-size="15" font-weight="bold" fill="#0D47A1">车道线</text>
+    <text x="557" y="258" text-anchor="middle" font-size="14" fill="#0D47A1">虚实判断</text>
+    <rect x="655" y="195" width="165" height="85" rx="6" fill="#FFFFFF" stroke="#1565C0" stroke-width="1.5"/>
+    <text x="737" y="232" text-anchor="middle" font-size="15" font-weight="bold" fill="#0D47A1">障碍物</text>
+    <text x="737" y="258" text-anchor="middle" font-size="14" fill="#0D47A1">连通域检测</text>
+    <rect x="835" y="195" width="165" height="85" rx="6" fill="#FFFFFF" stroke="#1565C0" stroke-width="1.5"/>
+    <text x="917" y="232" text-anchor="middle" font-size="15" font-weight="bold" fill="#0D47A1">告警决策</text>
+    <text x="917" y="258" text-anchor="middle" font-size="14" fill="#0D47A1">+ OSD 绘制</text>
+
+    <!-- DDR -->
+    <rect x="380" y="420" width="540" height="70" rx="8" fill="#FFF3E0" stroke="#EF6C00" stroke-width="2"/>
+    <text x="650" y="448" text-anchor="middle" font-size="15" font-weight="bold" fill="#E65100">DDR3 帧缓冲</text>
+    <text x="650" y="474" text-anchor="middle" font-size="13" fill="#E65100">处理帧 / 显示帧</text>
+
+    <!-- PL 区 -->
+    <rect x="270" y="550" width="760" height="220" rx="8" fill="#E8F5E9" stroke="#2E7D32" stroke-width="2"/>
+    <text x="290" y="580" font-size="16" font-weight="bold" fill="#1B5E20">PL · FPGA 图像预处理</text>
+
+    <rect x="330" y="610" width="170" height="75" rx="6" fill="#FFFFFF" stroke="#2E7D32" stroke-width="1.5"/>
+    <text x="415" y="642" text-anchor="middle" font-size="15" font-weight="bold" fill="#1B5E20">OV5640 接口</text>
+    <text x="415" y="668" text-anchor="middle" font-size="13" fill="#1B5E20">（SCCB / DVP）</text>
+
+    <rect x="515" y="610" width="270" height="75" rx="6" fill="#FFFFFF" stroke="#2E7D32" stroke-width="1.5"/>
+    <text x="650" y="642" text-anchor="middle" font-size="15" font-weight="bold" fill="#1B5E20">图像预处理流水线</text>
+    <text x="650" y="668" text-anchor="middle" font-size="12" fill="#1B5E20">灰度 → [滤波/缩放] → Sobel → 帧差</text>
+
+    <rect x="800" y="610" width="95" height="75" rx="6" fill="#FFFFFF" stroke="#2E7D32" stroke-width="1.5"/>
+    <text x="847" y="654" text-anchor="middle" font-size="15" font-weight="bold" fill="#1B5E20">AXI DMA</text>
+
+    <rect x="910" y="610" width="90" height="75" rx="6" fill="#FFFFFF" stroke="#2E7D32" stroke-width="1.5"/>
+    <text x="955" y="642" text-anchor="middle" font-size="15" font-weight="bold" fill="#1B5E20">HDMI</text>
+    <text x="955" y="668" text-anchor="middle" font-size="13" fill="#1B5E20">输出</text>
+
+    <rect x="765" y="705" width="235" height="55" rx="6" fill="#FFFFFF" stroke="#2E7D32" stroke-width="1.5"/>
+    <text x="882" y="727" text-anchor="middle" font-size="13" font-weight="bold" fill="#1B5E20">AXI-Lite 寄存器组</text>
+    <text x="882" y="752" text-anchor="middle" font-size="13" fill="#1B5E20">（阈值 / 使能 / 状态）</text>
+
+    <!-- 连线 -->
+    <line x1="200" y1="647" x2="330" y2="647" stroke="#424242" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="265" y="635" text-anchor="middle" font-size="12" fill="#424242">RGB565 视频流</text>
+
+    <line x1="500" y1="647" x2="515" y2="647" stroke="#424242" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="785" y1="647" x2="800" y2="647" stroke="#424242" stroke-width="2" marker-end="url(#arrow)"/>
+    <line x1="895" y1="647" x2="910" y2="647" stroke="#424242" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <line x1="830" y1="610" x2="830" y2="490" stroke="#424242" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="822" y="540" text-anchor="end" font-size="11" fill="#424242">S2MM 处理结果帧</text>
+    <line x1="875" y1="490" x2="875" y2="610" stroke="#424242" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="885" y="575" text-anchor="start" font-size="11" fill="#424242">MM2S 显示帧</text>
+
+    <line x1="560" y1="420" x2="560" y2="370" stroke="#424242" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="568" y="402" text-anchor="start" font-size="11" fill="#424242">读处理帧</text>
+    <line x1="640" y1="370" x2="640" y2="420" stroke="#424242" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="648" y="402" text-anchor="start" font-size="11" fill="#424242">写显示帧</text>
+
+    <polyline points="1020,370 1020,732 1000,732" fill="none" stroke="#424242" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
+    <text x="1012" y="460" text-anchor="end" font-size="12" fill="#424242">AXI-Lite</text>
+    <text x="1012" y="478" text-anchor="end" font-size="12" fill="#424242">参数/状态</text>
+
+    <line x1="1000" y1="647" x2="1100" y2="647" stroke="#424242" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="1050" y="635" text-anchor="middle" font-size="12" fill="#424242">显示帧</text>
+
+    <!-- 图例 -->
+    <line x1="350" y1="830" x2="410" y2="830" stroke="#424242" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="420" y="835" text-anchor="start" font-size="13" fill="#424242">数据流（视频帧）</text>
+    <line x1="620" y1="830" x2="680" y2="830" stroke="#424242" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrow)"/>
+    <text x="690" y="835" text-anchor="start" font-size="13" fill="#424242">控制流（AXI-Lite 参数/状态）</text>
+  </g>
+</svg>
