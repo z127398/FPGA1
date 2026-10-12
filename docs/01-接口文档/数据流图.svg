@@ -87,20 +87,20 @@
     <text x="700" y="600" text-anchor="middle" font-size="15" font-weight="bold" fill="#0D47A1">告警决策</text>
     <text x="700" y="622" text-anchor="middle" font-size="12" fill="#616161">分级告警状态机</text>
 
-    <!-- B4 OSD 信息生成 -->
+    <!-- B4 OSD 叠加 -->
     <rect x="460" y="560" width="140" height="110" rx="6" fill="#FFFFFF" stroke="#1565C0" stroke-width="1.5"/>
-    <text x="530" y="600" text-anchor="middle" font-size="15" font-weight="bold" fill="#0D47A1">OSD 信息生成</text>
-    <text x="530" y="622" text-anchor="middle" font-size="12" fill="#616161">状态/框/文字信息</text>
+    <text x="530" y="600" text-anchor="middle" font-size="15" font-weight="bold" fill="#0D47A1">OSD 叠加</text>
+    <text x="530" y="622" text-anchor="middle" font-size="12" fill="#616161">状态/框/文字绘制</text>
 
-    <!-- B5 串口发送 -->
+    <!-- B5 显示帧写回 -->
     <rect x="290" y="560" width="140" height="110" rx="6" fill="#FFFFFF" stroke="#1565C0" stroke-width="1.5"/>
-    <text x="360" y="600" text-anchor="middle" font-size="15" font-weight="bold" fill="#0D47A1">串口发送</text>
-    <text x="360" y="622" text-anchor="middle" font-size="12" fill="#616161">UART / SPI</text>
+    <text x="360" y="600" text-anchor="middle" font-size="15" font-weight="bold" fill="#0D47A1">显示帧写回</text>
+    <text x="360" y="622" text-anchor="middle" font-size="12" fill="#616161">DMA MM2S</text>
 
-    <!-- B6 串口屏显示 -->
+    <!-- B6 LCD 输出 -->
     <rect x="120" y="560" width="140" height="110" rx="6" fill="#FFFFFF" stroke="#1565C0" stroke-width="1.5"/>
-    <text x="190" y="600" text-anchor="middle" font-size="15" font-weight="bold" fill="#0D47A1">串口屏显示</text>
-    <text x="190" y="622" text-anchor="middle" font-size="12" fill="#616161">状态与告警</text>
+    <text x="190" y="600" text-anchor="middle" font-size="15" font-weight="bold" fill="#0D47A1">LCD 输出</text>
+    <text x="190" y="622" text-anchor="middle" font-size="12" fill="#616161">画面+叠加显示</text>
 
     <!-- PS 行内箭头（从右向左） -->
     <line x1="970" y1="615" x2="940" y2="615" stroke="#424242" stroke-width="2" marker-end="url(#arrow)"/>
@@ -115,7 +115,7 @@
 
     <!-- 性能指标 -->
     <rect x="330" y="700" width="640" height="46" rx="8" fill="#FAFAFA" stroke="#BDBDBD" stroke-width="1"/>
-    <text x="650" y="729" text-anchor="middle" font-size="13" fill="#424242">性能指标：处理帧率 ≥ 25fps ｜ 算法延迟 ≤ 60ms ｜ LUT &lt; 70% ｜ WNS ≥ 0</text>
+    <text x="650" y="729" text-anchor="middle" font-size="13" fill="#424242">性能指标：处理帧率 ≥ 25fps ｜ 端到端延迟 ≤ 60ms ｜ LUT &lt; 70% ｜ WNS ≥ 0</text>
 
     <!-- 图例 -->
     <line x1="350" y1="790" x2="410" y2="790" stroke="#424242" stroke-width="2" marker-end="url(#arrow)"/>
