@@ -16,7 +16,8 @@
 - [x] PL grayscale lane preprocessing with measured A/B result
 - [x] BSTLD 100-case local benchmark (partial mirror; limitations disclosed)
 - [x] TuSimple 20-frame manual lane evaluation
-- [ ] 3-minute 1080p raw video
+- [x] 3-minute demonstration video (2:59, 960x544, 30 FPS)
+- [ ] 1080p master only if the official submission rules require it
 
 ## Documentation and submission (10/27–10/31)
 
@@ -37,8 +38,9 @@
 - [x] Push source submission at commit `383a27c`
 - [x] Push repository-structure documentation at commit `492ce38`
 - [x] Add the corrected technical document and push commit `d44873a`
-- [ ] Create `stage4-freeze` tag
-- [ ] Create a Release or external link for the 3-minute video
+- [x] Create `stage4-freeze` tag
+- [x] Create Release and upload the three-minute video
 
 Current state: the source repository and corrected 21-page technical document
-are online. The freeze tag and video Release/link are pending.
+are online. The frozen Release and demonstration video are online; only a
+higher-resolution master remains optional unless 1080p is explicitly required.

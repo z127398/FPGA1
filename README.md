@@ -5,6 +5,11 @@
 照片 HIL 验证 ADAS 视觉算法，并用 PL 决策 FSM 与 500 ms 看门狗形成
 不依赖 Linux 的硬件安全岛。
 
+## 演示视频
+
+- [Stage 4 现场演示视频（GitHub Release）](https://github.com/z127398/FPGA1/releases/tag/stage4-freeze)
+- [直接下载 MP4](https://github.com/z127398/FPGA1/releases/download/stage4-freeze/ADAS_Zynq_stage4_demo.mp4)
+
 ## 模式入口
 
 在板子的 Jupyter 中打开对应 notebook：

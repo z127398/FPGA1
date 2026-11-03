@@ -17,3 +17,8 @@ Suggested sequence:
 Keep raw clips in `demo/raw/` (excluded from Git by size) and the final cut in
 `demo/`. Put the final video in a GitHub Release or an external link; do not
 commit large video blobs directly.
+
+The submitted 2:59 hardware demonstration is published in the
+[`stage4-freeze` Release](https://github.com/z127398/FPGA1/releases/tag/stage4-freeze).
+The uploaded video is 960x544 at 30 FPS. Keep a higher-resolution master if the
+competition later requires 1080p delivery.
