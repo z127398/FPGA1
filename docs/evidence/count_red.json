@@ -1,0 +1,27 @@
+{
+  "target": "RED",
+  "frames": 20,
+  "hits": 20,
+  "states": [
+    "RED",
+    "RED",
+    "RED",
+    "RED",
+    "RED",
+    "RED",
+    "RED",
+    "RED",
+    "RED",
+    "RED",
+    "RED",
+    "RED",
+    "RED",
+    "RED",
+    "RED",
+    "RED",
+    "RED",
+    "RED",
+    "RED",
+    "RED"
+  ]
+}

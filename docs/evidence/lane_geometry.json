@@ -1,0 +1,103 @@
+{
+  "ok": true,
+  "centered": {
+    "fps": 33.100295939707216,
+    "left": "SOLID",
+    "right": "SOLID",
+    "center_offset": 0.03303270787000656,
+    "curvature": 0.054839108139276505,
+    "departure": false,
+    "left_curve": [
+      0.05635842680931091,
+      -0.24058090150356293,
+      0.3998362421989441
+    ],
+    "right_curve": [
+      0.053319789469242096,
+      0.15784373879432678,
+      0.6062554121017456
+    ],
+    "decision": {
+      "tl": 2,
+      "ll": 1,
+      "lr": 1,
+      "obs": 0,
+      "force": 0,
+      "turn": 0
+    },
+    "status": {
+      "raw": 2,
+      "led": 2,
+      "beep": 0,
+      "wd_timeout": 0,
+      "alarm_reason": 0
+    }
+  },
+  "departure": {
+    "fps": 13.764720167683047,
+    "left": "SOLID",
+    "right": "SOLID",
+    "center_offset": 0.38213593885302544,
+    "curvature": 0.06744510866701603,
+    "departure": true,
+    "left_curve": [
+      -0.012160215526819229,
+      -0.1565553843975067,
+      0.5704873204231262
+    ],
+    "right_curve": [
+      -0.12273000180721283,
+      0.3151307702064514,
+      0.7879634499549866
+    ],
+    "decision": {
+      "tl": 2,
+      "ll": 1,
+      "lr": 1,
+      "obs": 1,
+      "force": 0,
+      "turn": 0
+    },
+    "status": {
+      "raw": 106,
+      "led": 2,
+      "beep": 1,
+      "wd_timeout": 0,
+      "alarm_reason": 3
+    }
+  },
+  "cleared_evidence": {
+    "fps": 13.597503871885529,
+    "left": "SOLID",
+    "right": "SOLID",
+    "center_offset": 0.09736848808825016,
+    "curvature": 0.008140447549521923,
+    "departure": false,
+    "left_curve": [
+      -0.03379823639988899,
+      -0.14891976118087769,
+      0.42486727237701416
+    ],
+    "right_curve": [
+      0.017517341300845146,
+      0.17650939524173737,
+      0.6611924767494202
+    ],
+    "decision": {
+      "tl": 2,
+      "ll": 1,
+      "lr": 1,
+      "obs": 0,
+      "force": 0,
+      "turn": 0
+    },
+    "status": {
+      "raw": 2,
+      "led": 2,
+      "beep": 0,
+      "wd_timeout": 0,
+      "alarm_reason": 0
+    }
+  },
+  "cleared": true
+}

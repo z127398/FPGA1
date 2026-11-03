@@ -1,0 +1,45 @@
+{
+  "target": "GREEN",
+  "time": "2026-10-06 05:19:40",
+  "traffic_light": {
+    "state": "GREEN",
+    "relaxed": false,
+    "boxes": [
+      [
+        96,
+        86,
+        104,
+        99,
+        "GREEN",
+        6866
+      ]
+    ]
+  },
+  "lanes": {
+    "left": "NONE",
+    "right": "NONE",
+    "coverage_left": 0.0,
+    "coverage_right": 0.0
+  },
+  "obstacle": false,
+  "decision": {
+    "tl": 2,
+    "ll": 0,
+    "lr": 0,
+    "obs": 0,
+    "force": 0,
+    "turn": 0
+  },
+  "status": {
+    "raw": 2,
+    "led": 2,
+    "beep": 0,
+    "wd_timeout": 0,
+    "alarm_reason": 0
+  },
+  "buttons": {
+    "raw": 3,
+    "key0": 0,
+    "key1": 0
+  }
+}

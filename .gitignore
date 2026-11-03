@@ -1,0 +1,23 @@
+build/
+.Xil/
+backups/
+src/ip/
+datasets/
+*.jou
+*.log
+*.str
+__pycache__/
+*.pyc
+
+# Vendor datasheets are large; keep the project's own report PDF only.
+docs/*.pdf
+docs/reference/
+!docs/report/*.pdf
+
+# Local runtime artifacts
+*.pyc
+.ipynb_checkpoints/
+
+# Large raw/final video stays outside Git history
+demo/raw/
+demo/*.mp4

@@ -1,0 +1,11 @@
+path,left,right,scene_class,source_name,notes
+tusimple_subset/frame_18.jpg,DASHED,SOLID,SOLID_EDGE,0531_1492637141001298780_20.jpg,left lane divider dashed; right edge line solid
+tusimple_subset/frame_22.jpg,DASHED,SOLID,SOLID_EDGE,0531_1492627490412865107_20.jpg,left lane divider dashed; right edge line solid
+tusimple_subset/frame_26.jpg,DASHED,SOLID,SOLID_EDGE,0531_1492627523591276079_20.jpg,left lane divider dashed; right edge line solid
+tusimple_subset/frame_30.jpg,DASHED,SOLID,SOLID_EDGE,0531_1492636865467607094_20.jpg,left lane divider dashed; right edge line solid
+tusimple_subset/frame_31.jpg,DASHED,SOLID,SOLID_EDGE,0601_1494453883436198482_20.jpg,left lane divider dashed; right edge line solid
+tusimple_subset/frame_11.jpg,DASHED,DASHED,DASHED_LANES,0601_1494453099778973073_20.jpg,both ego-lane boundaries dashed
+tusimple_subset/frame_13.jpg,DASHED,DASHED,DASHED_LANES,0313-2_31020_20.jpg,both ego-lane boundaries dashed
+tusimple_subset/frame_15.jpg,DASHED,DASHED,DASHED_LANES,0601_1494453093781512928_20.jpg,both ego-lane boundaries dashed
+tusimple_subset/frame_20.jpg,DASHED,DASHED,DASHED_LANES,0313-1_35040_20.jpg,both ego-lane boundaries dashed
+tusimple_subset/frame_35.jpg,DASHED,DASHED,DASHED_LANES,0601_1494453237719261701_20.jpg,both ego-lane boundaries dashed

@@ -1,0 +1,38 @@
+{
+  "modes": {
+    "traffic_light": {
+      "fps": 23.003947518164207,
+      "status": {
+        "raw": 0,
+        "led": 0,
+        "beep": 0,
+        "wd_timeout": 0,
+        "alarm_reason": 0
+      },
+      "last_error": "None"
+    },
+    "lane": {
+      "fps": 12.165465352918156,
+      "status": {
+        "raw": 0,
+        "led": 0,
+        "beep": 0,
+        "wd_timeout": 0,
+        "alarm_reason": 0
+      },
+      "last_error": "None"
+    },
+    "obstacle": {
+      "fps": 26.769228104102304,
+      "status": {
+        "raw": 0,
+        "led": 0,
+        "beep": 0,
+        "wd_timeout": 0,
+        "alarm_reason": 0
+      },
+      "last_error": "None"
+    }
+  },
+  "ok": true
+}

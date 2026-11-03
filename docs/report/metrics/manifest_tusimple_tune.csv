@@ -1,0 +1,11 @@
+path,left,right,scene_class,source_name,notes
+tusimple_subset/frame_03.jpg,DASHED,SOLID,SOLID_EDGE,0601_1495058507652622962_20.jpg,left lane divider dashed; right edge line solid
+tusimple_subset/frame_06.jpg,DASHED,SOLID,SOLID_EDGE,0531_1492627514463544781_20.jpg,left lane divider dashed; right edge line solid
+tusimple_subset/frame_09.jpg,DASHED,SOLID,SOLID_EDGE,0313-2_29340_20.jpg,left lane divider dashed; right edge line solid
+tusimple_subset/frame_10.jpg,DASHED,SOLID,SOLID_EDGE,0531_1492627517664589343_20.jpg,left lane divider dashed; right edge line solid
+tusimple_subset/frame_14.jpg,DASHED,SOLID,SOLID_EDGE,0531_1492637136370695779_20.jpg,left lane divider dashed; right edge line solid
+tusimple_subset/frame_00.jpg,DASHED,DASHED,DASHED_LANES,0313-1_25680_20.jpg,both ego-lane boundaries dashed
+tusimple_subset/frame_01.jpg,DASHED,DASHED,DASHED_LANES,0313-2_31680_20.jpg,both ego-lane boundaries dashed
+tusimple_subset/frame_04.jpg,DASHED,DASHED,DASHED_LANES,0313-1_26220_20.jpg,both ego-lane boundaries dashed
+tusimple_subset/frame_05.jpg,DASHED,DASHED,DASHED_LANES,0313-2_16020_20.jpg,both ego-lane boundaries dashed
+tusimple_subset/frame_07.jpg,DASHED,DASHED,DASHED_LANES,0601_1494453051799965832_20.jpg,both ego-lane boundaries dashed

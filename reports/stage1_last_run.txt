@@ -1,0 +1,1 @@
+PASS: 7_ov5640_rgb2gray bitstream built and exported

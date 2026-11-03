@@ -1,0 +1,50 @@
+{
+  "kind": "lane",
+  "sides": 20,
+  "correct": 16,
+  "accuracy": 0.8,
+  "confusion": [
+    {
+      "side": "left",
+      "expected": "DASHED",
+      "predicted": "DASHED",
+      "count": 8
+    },
+    {
+      "side": "left",
+      "expected": "DASHED",
+      "predicted": "NONE",
+      "count": 1
+    },
+    {
+      "side": "left",
+      "expected": "DASHED",
+      "predicted": "SOLID",
+      "count": 1
+    },
+    {
+      "side": "right",
+      "expected": "DASHED",
+      "predicted": "DASHED",
+      "count": 3
+    },
+    {
+      "side": "right",
+      "expected": "DASHED",
+      "predicted": "NONE",
+      "count": 2
+    },
+    {
+      "side": "right",
+      "expected": "SOLID",
+      "predicted": "SOLID",
+      "count": 5
+    }
+  ],
+  "manifest": "D:\\adas_pl\\docs\\report\\metrics\\manifest_tusimple_test.csv",
+  "root": "D:\\adas_pl\\datasets",
+  "input_size": [
+    320,
+    240
+  ]
+}

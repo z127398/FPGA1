@@ -1,0 +1,40 @@
+{
+  "time": "2026-10-06 07:07:53",
+  "obstacle": {
+    "present": true,
+    "near": true,
+    "boxes": [
+      [
+        96,
+        48,
+        156,
+        192
+      ]
+    ],
+    "background_age": 28,
+    "shift": [
+      0.07674423799353747,
+      -0.012205087874015419
+    ]
+  },
+  "decision": {
+    "tl": 0,
+    "ll": 0,
+    "lr": 0,
+    "obs": 1,
+    "force": 0,
+    "turn": 0
+  },
+  "status": {
+    "raw": 104,
+    "led": 0,
+    "beep": 1,
+    "wd_timeout": 0,
+    "alarm_reason": 3
+  },
+  "buttons": {
+    "raw": 3,
+    "key0": 0,
+    "key1": 0
+  }
+}

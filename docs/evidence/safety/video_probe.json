@@ -1,0 +1,25 @@
+{
+  "color": {
+    "bgr_mean": [
+      125.94,
+      134.44,
+      125.24
+    ],
+    "channel_spread": 9.21
+  },
+  "gray": {
+    "bgr_mean": [
+      130.42,
+      130.42,
+      130.42
+    ],
+    "channel_spread": 0.0
+  },
+  "sel_color": 0,
+  "sel_gray": 1,
+  "sel_restored": 0,
+  "color_pass": true,
+  "gray_pass": true,
+  "lcd_rb_order": "BGR",
+  "operator_confirmation": "blue, green, red, white displayed correctly"
+}

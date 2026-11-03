@@ -1,0 +1,6 @@
+# Desktop-side tests and report generation.
+numpy>=1.20
+opencv-python>=4.2
+pytest>=4.6
+reportlab>=3.5
+pypdf>=3.0

@@ -1,0 +1,55 @@
+{
+  "mode": "obstacle",
+  "input_mode": "color",
+  "time": "2026-10-07 15:53:15",
+  "traffic_light": {
+    "state": "NONE",
+    "track_id": 0,
+    "boxes": []
+  },
+  "lanes": {
+    "left": "NONE",
+    "right": "NONE",
+    "coverage_left": 0.0,
+    "coverage_right": 0.0,
+    "center_offset": 0.0,
+    "curvature": 0.0,
+    "departure": false
+  },
+  "obstacle": {
+    "present": true,
+    "learning": false,
+    "background_age": 779,
+    "boxes": [
+      [
+        8,
+        118,
+        298,
+        106
+      ]
+    ],
+    "track_ids": [
+      11
+    ]
+  },
+  "decision": {
+    "tl": 0,
+    "ll": 0,
+    "lr": 0,
+    "obs": 1,
+    "force": 0,
+    "turn": 0
+  },
+  "status": {
+    "raw": 96,
+    "led": 0,
+    "beep": 0,
+    "wd_timeout": 0,
+    "alarm_reason": 3
+  },
+  "buttons": {
+    "raw": 3,
+    "key0": 0,
+    "key1": 0
+  }
+}

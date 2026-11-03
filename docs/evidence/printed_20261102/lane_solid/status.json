@@ -1,0 +1,46 @@
+{
+  "mode": "lane",
+  "input_mode": "color",
+  "time": "2026-10-07 15:57:22",
+  "traffic_light": {
+    "state": "NONE",
+    "track_id": 0,
+    "boxes": []
+  },
+  "lanes": {
+    "left": "SOLID",
+    "right": "SOLID",
+    "coverage_left": 0.9117647058823529,
+    "coverage_right": 0.9264705882352942,
+    "center_offset": -0.08368875086307526,
+    "curvature": 0.0,
+    "departure": false
+  },
+  "obstacle": {
+    "present": false,
+    "learning": false,
+    "background_age": 0,
+    "boxes": [],
+    "track_ids": []
+  },
+  "decision": {
+    "tl": 2,
+    "ll": 1,
+    "lr": 1,
+    "obs": 0,
+    "force": 0,
+    "turn": 0
+  },
+  "status": {
+    "raw": 2,
+    "led": 2,
+    "beep": 0,
+    "wd_timeout": 0,
+    "alarm_reason": 0
+  },
+  "buttons": {
+    "raw": 3,
+    "key0": 0,
+    "key1": 0
+  }
+}

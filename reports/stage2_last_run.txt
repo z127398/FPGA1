@@ -1,0 +1,1 @@
+PASS: Stage 2 done: color/gray mux added, bitstream built and exported

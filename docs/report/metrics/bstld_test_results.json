@@ -1,0 +1,56 @@
+{
+  "kind": "traffic_light",
+  "total": 40,
+  "correct": 31,
+  "accuracy": 0.775,
+  "confusion": [
+    {
+      "expected": "GREEN",
+      "predicted": "GREEN",
+      "count": 7
+    },
+    {
+      "expected": "GREEN",
+      "predicted": "NONE",
+      "count": 1
+    },
+    {
+      "expected": "GREEN",
+      "predicted": "YELLOW",
+      "count": 2
+    },
+    {
+      "expected": "NONE",
+      "predicted": "NONE",
+      "count": 10
+    },
+    {
+      "expected": "RED",
+      "predicted": "GREEN",
+      "count": 1
+    },
+    {
+      "expected": "RED",
+      "predicted": "NONE",
+      "count": 1
+    },
+    {
+      "expected": "RED",
+      "predicted": "RED",
+      "count": 4
+    },
+    {
+      "expected": "RED",
+      "predicted": "YELLOW",
+      "count": 4
+    },
+    {
+      "expected": "YELLOW",
+      "predicted": "YELLOW",
+      "count": 10
+    }
+  ],
+  "manifest": "D:\\adas_pl\\docs\\report\\metrics\\manifest_bstld_test.csv",
+  "root": "D:\\adas_pl\\datasets\\bstld_crops",
+  "input_size": null
+}

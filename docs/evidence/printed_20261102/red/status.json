@@ -1,0 +1,48 @@
+{
+  "target": "RED",
+  "time": "2026-10-07 15:30:44",
+  "traffic_light": {
+    "state": "RED",
+    "relaxed": false,
+    "boxes": [
+      [
+        164,
+        45,
+        30,
+        31,
+        "RED",
+        623
+      ]
+    ],
+    "circularity": 0.5829939873765095,
+    "convexity": 0.9361382419233659,
+    "inertia_ratio": 0.8931088125936363
+  },
+  "lanes": {
+    "left": "NONE",
+    "right": "NONE",
+    "coverage_left": 0.0,
+    "coverage_right": 0.0
+  },
+  "obstacle": false,
+  "decision": {
+    "tl": 1,
+    "ll": 0,
+    "lr": 0,
+    "obs": 0,
+    "force": 0,
+    "turn": 0
+  },
+  "status": {
+    "raw": 8,
+    "led": 0,
+    "beep": 1,
+    "wd_timeout": 0,
+    "alarm_reason": 0
+  },
+  "buttons": {
+    "raw": 3,
+    "key0": 0,
+    "key1": 0
+  }
+}

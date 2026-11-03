@@ -1,0 +1,45 @@
+{
+  "target": "YELLOW",
+  "time": "2026-10-06 05:20:06",
+  "traffic_light": {
+    "state": "YELLOW",
+    "relaxed": true,
+    "boxes": [
+      [
+        83,
+        79,
+        126,
+        124,
+        "YELLOW",
+        8362
+      ]
+    ]
+  },
+  "lanes": {
+    "left": "NONE",
+    "right": "NONE",
+    "coverage_left": 0.0,
+    "coverage_right": 0.0
+  },
+  "obstacle": false,
+  "decision": {
+    "tl": 3,
+    "ll": 0,
+    "lr": 0,
+    "obs": 0,
+    "force": 0,
+    "turn": 0
+  },
+  "status": {
+    "raw": 10,
+    "led": 2,
+    "beep": 1,
+    "wd_timeout": 0,
+    "alarm_reason": 0
+  },
+  "buttons": {
+    "raw": 3,
+    "key0": 0,
+    "key1": 0
+  }
+}

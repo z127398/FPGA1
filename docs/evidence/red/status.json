@@ -1,0 +1,42 @@
+{
+  "time": "2026-10-06 05:14:15",
+  "traffic_light": {
+    "state": "RED",
+    "relaxed": true,
+    "boxes": [
+      [
+        139,
+        73,
+        144,
+        133,
+        "RED",
+        11669
+      ]
+    ]
+  },
+  "lanes": {
+    "left": "NONE",
+    "right": "NONE"
+  },
+  "obstacle": false,
+  "decision": {
+    "tl": 1,
+    "ll": 0,
+    "lr": 0,
+    "obs": 0,
+    "force": 0,
+    "turn": 0
+  },
+  "status": {
+    "raw": 0,
+    "led": 0,
+    "beep": 0,
+    "wd_timeout": 0,
+    "alarm_reason": 0
+  },
+  "buttons": {
+    "raw": 3,
+    "key0": 0,
+    "key1": 0
+  }
+}

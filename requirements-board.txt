@@ -1,0 +1,5 @@
+# Exact versions observed on the verified PYNQ 2.7 board.
+# OpenCV 4.2.0 is supplied as an Ubuntu system package, not a pip package.
+numpy==1.20.3
+pytest==4.6.9
+pynq==2.7.0

@@ -1,0 +1,31 @@
+{
+  "dataset_rows_mapped": 219,
+  "candidate_source_images": {
+    "GREEN": 64,
+    "RED": 43,
+    "YELLOW": 1
+  },
+  "selected_real_yellow_sources": 1,
+  "samples": 100,
+  "samples_by_split": {
+    "tune": 60,
+    "test": 40
+  },
+  "samples_by_label": {
+    "RED": 25,
+    "GREEN": 25,
+    "YELLOW": 25,
+    "NONE": 25
+  },
+  "samples_by_origin": {
+    "real": 76,
+    "augmented": 24
+  },
+  "limitations": [
+    "The local BSTLD mirror contains 105 labelled training frames and 114 unlabelled/no-active-light test frames, not the full dataset.",
+    "Only one active yellow source box is present; 24 of 25 yellow samples are deterministic variants of that same source.",
+    "Yellow held-out samples share their source with tuning variants, so yellow accuracy must not be described as independent."
+  ],
+  "crop_policy": "Tight target crop with 35% padding on each side; other labelled traffic lights are masked; minimum side is upscaled to 96 px.",
+  "manifest_digest": "204771fa99d6ac08a7187a429101f145f5c82ed44011e0cf0bdcf7f617612f27"
+}

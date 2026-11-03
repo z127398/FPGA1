@@ -1,0 +1,11 @@
+{
+  "minutes": 5.0,
+  "samples": 9,
+  "fps_min": 17.58,
+  "fps_max": 22.54,
+  "fps_mean": 20.184444444444445,
+  "rss_start_kb": 95700,
+  "rss_end_kb": 98268,
+  "temp_max_c": null,
+  "last_error": "None"
+}

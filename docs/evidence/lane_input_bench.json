@@ -1,0 +1,46 @@
+{
+  "duration_s": 20.0,
+  "prepare_s": 10.0,
+  "ok": true,
+  "color": {
+    "input_mode": "color",
+    "elapsed_s": 20.011439323425293,
+    "fps_average": 19.540486932446548,
+    "fps_last_window": 18.84578701785977,
+    "status": {
+      "raw": 0,
+      "led": 0,
+      "beep": 0,
+      "wd_timeout": 0,
+      "alarm_reason": 0
+    },
+    "last_error": "None",
+    "lane": {
+      "left": "SOLID",
+      "right": "SOLID",
+      "coverage_left": 1.0,
+      "coverage_right": 1.0
+    }
+  },
+  "gray": {
+    "input_mode": "gray",
+    "elapsed_s": 20.02918028831482,
+    "fps_average": 20.521771399021606,
+    "fps_last_window": 21.949447711731118,
+    "status": {
+      "raw": 0,
+      "led": 0,
+      "beep": 0,
+      "wd_timeout": 0,
+      "alarm_reason": 0
+    },
+    "last_error": "None",
+    "lane": {
+      "left": "SOLID",
+      "right": "SOLID",
+      "coverage_left": 1.0,
+      "coverage_right": 1.0
+    }
+  },
+  "gray_delta_pct": 5.0218015035523855
+}
