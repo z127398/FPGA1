@@ -76,7 +76,8 @@ PYTHONPATH=. /usr/local/share/pynq-venv/bin/python3 -m pytest -q \
 - [大模型协作记录](docs/competition/llm_collaboration.md)
 - [答辩问答](docs/competition/qa.md)
 - [提交清单](docs/submission_checklist.md)
-- [设计报告](docs/report/adas_report.md)
-- [PDF 报告](docs/report/adas_report_final.pdf)
+- [正式技术文档 DOCX](docs/report/adas_technical_document.docx)
+- [正式技术文档 PDF](docs/report/adas_technical_document.pdf)
+- [补充设计报告 Markdown](docs/report/adas_report.md)
 
 许可证见 [LICENSE](LICENSE)。

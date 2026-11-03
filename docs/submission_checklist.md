@@ -22,7 +22,8 @@
 
 - [x] README.md
 - [x] docs/report/adas_report.md
-- [x] docs/report/adas_report_final.pdf
+- [x] docs/report/adas_technical_document.docx
+- [x] docs/report/adas_technical_document.pdf
 - [x] docs/stage4_debug.md
 - [x] docs/stage4_acceptance.md
 - [x] docs/photo_capture_guide.md
@@ -31,10 +32,13 @@
 
 ## Git/GitHub
 
-- [ ] Create `pedriii8/adas_pl` repository or provide the correct URL
-- [ ] Review staged files
-- [ ] Create staged commits after 10/27
-- [ ] Push and create a release
-- [ ] Keep video out of normal Git history; use Release/link
+- [x] Create public repository: `https://github.com/z127398/FPGA1`
+- [x] Review staged files
+- [x] Push source submission at commit `383a27c`
+- [x] Push repository-structure documentation at commit `492ce38`
+- [ ] Add the corrected technical document and commit the update
+- [ ] Create `stage4-freeze` tag
+- [ ] Create a Release or external link for the 3-minute video
 
-Current state: no commits and no pushes. Review the final staged set before 10/27.
+Current state: the source repository is online. The corrected 21-page technical
+document is present locally; the tag, video link and final push are pending.
