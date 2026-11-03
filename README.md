@@ -38,6 +38,8 @@
 |---|---|
 | `src/`、`scripts/`、`sim/` | RTL、Vivado 构建脚本和仿真 |
 | `release/stage4/` | 最终比特流与 HWH |
+| `demo/` | 现场演示流程与讲解稿 |
+| `reports/` | 各阶段 Vivado 时序与资源报告 |
 | `stage4/` | PYNQ/OpenCV 运行代码、测试、notebook 和工具 |
 | `docs/` | 报告、调试记录、验收证据和比赛材料 |
 | `skill/` | 可复用 PYNQ、证据统计、调试与大模型工作流 |
