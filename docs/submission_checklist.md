@@ -36,9 +36,9 @@
 - [x] Review staged files
 - [x] Push source submission at commit `383a27c`
 - [x] Push repository-structure documentation at commit `492ce38`
-- [ ] Add the corrected technical document and commit the update
+- [x] Add the corrected technical document and push commit `d44873a`
 - [ ] Create `stage4-freeze` tag
 - [ ] Create a Release or external link for the 3-minute video
 
-Current state: the source repository is online. The corrected 21-page technical
-document is present locally; the tag, video link and final push are pending.
+Current state: the source repository and corrected 21-page technical document
+are online. The freeze tag and video Release/link are pending.
